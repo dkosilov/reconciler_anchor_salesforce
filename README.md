@@ -1,4 +1,4 @@
-The script's main purpose is to reconcile accounts and contacts between Anchor, Northstar ans Salesforce.
+The script's main purpose is to reconcile accounts and contacts between Anchor, Northstar and Salesforce.
 
 <h1>Usage</h1>
 <h2>Inputs</h2>
