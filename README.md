@@ -27,6 +27,8 @@ The script's main purpose is to reconcile accounts and contacts between Anchor, 
 
 Aforementioned spreadsheet column names are mandatory. Though spreadsheets are allowed to additionally contain arbitrary columns - they will be simply ignored during data reconciliation.
 
+All non-meaningful leading and trailing rows (for example, containing totals, descriptions and etc.) must be removed from the spreadsheet beforehand. 
+
 <h2>Output</h2>
 
 * `--result-file` - path to result Excel workbook. The file will have 2 spreadsheets for accounts and contacts reconciliation.
@@ -34,7 +36,7 @@ Aforementioned spreadsheet column names are mandatory. Though spreadsheets are a
 <h2>Example</h2>
 
 ```bash
-run.py --anchor-file anchor_usage_data.xlsx --northstar-file northstar_users.xlsx ----salesforce-file "X360sync - Anchor Partner Contacts.xlsx" --account-name-match-ratio-threshold 85 --result-file output.xlsx 
+run.py --anchor-file anchor_usage_data.xlsx --northstar-file northstar_users.xlsx --salesforce-file "X360sync - Anchor Partner Contacts.xlsx" --account-name-match-ratio-threshold 85 --result-file output.xlsx 
 ```   
  
 <h1>Script algorithm (briefly)</h1>
